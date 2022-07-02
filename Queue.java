@@ -18,6 +18,15 @@ public class Queue{
       System.out.println("Not full. I repeat not full.");
     }
   }
+
+  public void isEmpty(){
+    if(beg==-1){
+      System.out.println("Alas! the queue is empty. :(");
+    }
+    else{
+      System.out.println("hehe. Queue ain't empty son.");
+    }
+  }
   // public void enqueue(int value){
     
   // }
