@@ -1,5 +1,6 @@
 class Main {
   public static void main(String[] args) {
-    System.out.println("Hello world!");
+    Queue q=new Queue();
+    q.createQueue(6);
   }
 }
