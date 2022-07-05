@@ -10,25 +10,40 @@ public class Queue{
     System.out.println("Queue created of size "+size);
   }
 
-  public void isFull(){
+  public boolean isFull(){
     if(top==queue.length-1){
+      
       System.out.println("Queue is Full! :)");
+      return true;
     }
     else{
-      System.out.println("Not full. I repeat not full.");
+      
+      return false;
     }
   }
 
-  public void isEmpty(){
+  public boolean isEmpty(){
     if(beg==-1){
       System.out.println("Alas! the queue is empty. :(");
+      return true;
     }
     else{
-      System.out.println("hehe. Queue ain't empty son.");
+      return false;
     }
   }
-  // public void enqueue(int value){
-    
-  // }
- 
+  public void enqueue(int value){
+    if(isEmpty()){
+      top++;
+      beg++;
+      queue[top]=value;
+    }
+    else if(isFull()){
+      System.out.println("LOL. QUEUE already full.");
+    }
+    else {
+      top++;
+      queue[top]=value;
+      System.out.println("Value enqueued successfully.");
+    }
+  }
 }
