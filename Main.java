@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] args) {
     Queue q=new Queue();
-    q.createQueue(6);
+    q.createQueue(7);
     q.isFull();
     q.isEmpty();
     q.enqueue(1);
@@ -14,5 +14,11 @@ class Main {
     q.isEmpty();
     q.dequeue();
     q.dequeue();
+    int beg=q.peek();
+    System.out.println(beg+" -> is the beggining element in queue.");
+    q.enqueue(7);
+
+    beg=q.peek();
+    System.out.println(beg+" -> is the beggining element in queue.");
   }
 }
