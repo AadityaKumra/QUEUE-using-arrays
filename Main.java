@@ -12,5 +12,7 @@ class Main {
     q.enqueue(6);
     q.isFull();
     q.isEmpty();
+    q.dequeue();
+    q.dequeue();
   }
 }

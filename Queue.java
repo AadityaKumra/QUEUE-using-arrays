@@ -46,4 +46,15 @@ public class Queue{
       System.out.println("Value enqueued successfully.");
     }
   }
+
+  public void dequeue(){
+    if(isEmpty()){
+      System.out.println("HOLD UP. Queue already empty man. chill out.");
+    }
+    else{
+      int result=queue[beg];
+      beg++;
+      System.out.println(result+ " -> Dequeued successfully from the queue.");
+    }
+  }
 }
