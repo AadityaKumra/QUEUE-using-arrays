@@ -57,6 +57,8 @@ public class Queue{
       System.out.println(result+ " -> Dequeued successfully from the queue.");
     }
   }
+
+  
   public int peek(){
     if(isEmpty()){
       System.out.println("HOLD UP. Queue already empty man. chill out.");
@@ -65,5 +67,10 @@ public class Queue{
     else{
       return queue[beg];
     }
+  }
+
+  public void deleteQueue(){
+    queue=null;
+    System.out.println(" (Evil Laughter). Queue terminated successfully!");
   }
 }
